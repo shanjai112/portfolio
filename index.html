@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shanjai M - Cybersecurity Learner</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background-color: #0f172a;
+      color: #f1f5f9;
+      line-height: 1.6;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #1e293b;
+      border-bottom: 1px solid #334155;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 1.5rem;
+      color: #4ade80;
+    }
+
+    .logo-img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+      border: 2px solid #4ade80;
+    }
+
+    .nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #94a3b8;
+      transition: color 0.3s ease;
+    }
+
+    .nav a:hover {
+      color: #4ade80;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 5rem 2rem;
+      background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
+    }
+
+    .hero h2 {
+      font-size: 2.8rem;
+      color: #4ade80;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 1.2rem;
+      color: #cbd5e1;
+    }
+
+    .cta-button {
+      margin-top: 2rem;
+      background-color: #4ade80;
+      color: #0f172a;
+      padding: 0.8rem 1.6rem;
+      border: none;
+      font-size: 1rem;
+      border-radius: 9999px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(74, 222, 128, 0.3);
+    }
+
+    .cta-button:hover {
+      background-color: #22c55e;
+      transform: scale(1.05);
+    }
+
+    .features {
+      padding: 4rem 2rem;
+      background-color: #1e293b;
+      text-align: center;
+    }
+
+    .features h3 {
+      font-size: 2.2rem;
+      margin-bottom: 2rem;
+      color: #4ade80;
+    }
+
+    .feature-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .feature {
+      background-color: #0f172a;
+      max-width: 320px;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 0 12px rgba(74, 222, 128, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .feature:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px rgba(74, 222, 128, 0.4);
+    }
+
+    .feature h4 {
+      margin-bottom: 0.75rem;
+      color: #f1f5f9;
+    }
+
+    .feature p {
+      color: #94a3b8;
+      font-size: 0.95rem;
+    }
+
+    .about, .contact {
+      padding: 4rem 2rem;
+      background-color: #0f172a;
+      text-align: center;
+    }
+
+    .about h3, .contact h3 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: #4ade80;
+    }
+
+    .about p {
+      max-width: 800px;
+      margin: 0 auto;
+      color: #cbd5e1;
+    }
+
+    .contact a {
+      display: block;
+      margin: 0.5rem 0;
+      color: #94a3b8;
+      transition: color 0.3s;
+    }
+
+    .contact a:hover {
+      color: #4ade80;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 1.5rem;
+      background-color: #1e293b;
+      color: #64748b;
+      font-size: 0.9rem;
+      border-top: 1px solid #334155;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .feature-list {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .hero h2 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="1.jpg" alt="Shanjai M" class="logo-img">
+      SHANJAI M
+    </div>
+    <nav class="nav">
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Cybersecurity Enthusiast & Learner</h2>
+    <p>I’m just starting my journey in cybersecurity. I’m learning how to protect systems, understand threats, and build a secure digital future step-by-step.</p>
+    <a href="my_journey.html"><button class="cta-button">Follow My Journey →</button></a>
+  </section>
+
+  <section id="skills" class="features">
+    <h3>Skills I've Learned</h3>
+    <div class="feature-list">
+      <div class="feature"><h4>Programming</h4><p>Python, C#, PHP (Beginner Level)</p></div>
+      <div class="feature"><h4>Designing</h4><p>HTML & CSS for UI/UX and layout</p></div>
+      <div class="feature"><h4>Database</h4><p>MySQL for structured data storage</p></div>
+      <div class="feature"><h4>Linux CLI</h4><p>Basic shell commands and terminal navigation</p></div>
+      <div class="feature"><h4>Networking</h4><p>IP, DNS, ports, protocols, client-server</p></div>
+      <div class="feature"><h4>Cyber Basics</h4><p>Understanding computer and internet fundamentals</p></div>
+      <div class="feature"><h4>Online Safety</h4><p>Password hygiene, phishing defense</p></div>
+    </div>
+  </section>
+
+  <section id="projects" class="features">
+    <h3>My GitHub Projects</h3>
+    <div class="feature-list">
+      <div class="feature">
+        <h4><a href="https://github.com/shanjai112/stock_price_prediction" target="_blank">📈 Stock Price Predictor</a></h4>
+        <p>ML-powered price forecasting using Python.</p>
+      </div>
+      <div class="feature">
+        <h4><a href="https://github.com/shanjai112/keyloger" target="_blank">⌨️ Keylogger (Ethical)</a></h4>
+        <p>Python-based learning tool for key capture.</p>
+      </div>
+      <div class="feature">
+        <h4><a href="https://github.com/shanjai112/port_scanner" target="_blank">🔍 Port Scanner</a></h4>
+        <p>Basic socket scanner in Python.</p>
+      </div>
+      <div class="feature">
+        <h4><a href="https://github.com/shanjai112/ston_paper_secore" target="_blank">✊ Game - Stone Paper</a></h4>
+        <p>Fun CLI rock-paper-scissors game.</p>
+      </div>
+      <div class="feature">
+        <h4><a href="https://github.com/shanjai112/whatsapp-messger" target="_blank">💬 WhatsApp Messenger</a></h4>
+        <p>Simulated chatting experience via automation.</p>
+      </div>
+      <div class="feature">
+        <h4><a href="https://github.com/shanjai112/Time_pass-game" target="_blank">🎮 Unity Game</a></h4>
+        <p>Casual game using Unity + C#.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h3>Contact Me</h3>
+    <a href="mailto:shanjaim01@gmail.com" target="_blank">📧 shanjaim01@gmail.com</a>
+    <a href="https://linkedin.com/in/shanjai-m-979b27338" target="_blank">🔗 LinkedIn</a>
+    <a href="https://github.com/shanjai112" target="_blank">💻 GitHub</a>
+  </section>
+
+  <footer class="footer">
+    &copy; 2025 Shanjai M. All rights reserved.
+  </footer>
+</body>
+</html>
